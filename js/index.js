@@ -83,3 +83,12 @@ document.querySelector('.bottom-content .text-content:nth-child(2) p').textConte
 // Vision
 document.querySelector('.bottom-content .text-content:last-child h4').textContent = (siteContent["main-content"]["vision-h4"]);
 document.querySelector('.bottom-content .text-content:last-child p').textContent = (siteContent["main-content"]["vision-content"]);
+
+// Contact 
+document.querySelector('.contact h4').textContent = (siteContent["contact"]["contact-h4"]);
+document.querySelector('.contact p:first-of-type').textContent = (siteContent["contact"]["address"]);
+document.querySelector('.contact p:nth-of-type(2)').textContent = (siteContent["contact"]["phone"]);
+document.querySelector('.contact p:last-of-type').textContent = (siteContent["contact"]["email"]);
+
+// Footer
+document.querySelector('footer p').textContent = (siteContent["footer"]["copyright"]);
