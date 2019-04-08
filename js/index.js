@@ -55,6 +55,11 @@ const hiThere = document.createElement("a");
 const helloNode = document.createTextNode("Hello!")
 hiThere.appendChild(helloNode);
 document.querySelector('nav').appendChild(hiThere);
+// prepend to links
+const whatsUp = document.createElement("a");
+const whatsUpText = document.createTextNode("Nice to see you!")
+whatsUp.appendChild(whatsUpText);
+document.querySelector('nav').prepend(whatsUp);
 
 // CTA
 // update H1 text]
