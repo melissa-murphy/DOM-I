@@ -42,11 +42,18 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Append unique text to a tags
-let navItems = Array.from(document.getElementsByTagName("a"));
+// let navItems = Array.from(document.getElementsByTagName("a"));
 // console.log(navItems); // for testing
-navItems.forEach(item => {
+//   navItems.forEach(item => {
 
-})
+// })
+// Nav
+document.querySelector('nav a:first-of-type').textContent = (siteContent["nav"]["nav-item-1"]);
+document.querySelector('nav a:nth-of-type(2)').textContent = (siteContent["nav"]["nav-item-2"]);
+document.querySelector('nav a:nth-of-type(3)').textContent = (siteContent["nav"]["nav-item-3"]);
+document.querySelector('nav a:nth-of-type(4)').textContent = (siteContent["nav"]["nav-item-4"]);
+document.querySelector('nav a:nth-of-type(5)').textContent = (siteContent["nav"]["nav-item-5"]);
+document.querySelector('nav a:last-of-type').textContent = (siteContent["nav"]["nav-item-6"]);
 
 // CTA
 // update H1 text]
