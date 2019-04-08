@@ -54,6 +54,8 @@ let ctaH1 = document.querySelector('.cta-text h1');
 ctaH1.textContent = (siteContent["cta"]['h1']);
 let ctaButton = document.querySelector('.cta button');
 ctaButton.textContent = (siteContent["cta"]['button']);
+let ctaLogo = document.querySelector('.cta #cta-img');
+ctaLogo.setAttribute('src', siteContent["cta"]["img-src"]);
 // update button text
 
 // add circle header image
