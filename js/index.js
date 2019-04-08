@@ -50,9 +50,10 @@ navItems.forEach(item => {
 
 // CTA
 // update H1 text
-const ctaH1 = document.querySelector('.cta-text h1');
+let ctaH1 = document.querySelector('.cta-text h1');
 ctaH1.textContent = (siteContent["cta"]['h1']);
-
+let ctaButton = document.querySelector('.cta button');
+ctaButton.textContent = (siteContent["cta"]['button']);
 // update button text
 
 // add circle header image
