@@ -41,12 +41,6 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-// Append unique text to a tags
-// let navItems = Array.from(document.getElementsByTagName("a"));
-// console.log(navItems); // for testing
-//   navItems.forEach(item => {
-
-// })
 // Nav
 document.querySelector('nav a:first-of-type').textContent = (siteContent["nav"]["nav-item-1"]);
 document.querySelector('nav a:nth-of-type(2)').textContent = (siteContent["nav"]["nav-item-2"]);
@@ -54,6 +48,13 @@ document.querySelector('nav a:nth-of-type(3)').textContent = (siteContent["nav"]
 document.querySelector('nav a:nth-of-type(4)').textContent = (siteContent["nav"]["nav-item-4"]);
 document.querySelector('nav a:nth-of-type(5)').textContent = (siteContent["nav"]["nav-item-5"]);
 document.querySelector('nav a:last-of-type').textContent = (siteContent["nav"]["nav-item-6"]);
+// // Green nav links
+document.querySelectorAll('nav a').forEach(e => e.style.color = "green");
+// append to links
+const hiThere = document.createElement("a");
+const helloNode = document.createTextNode("Hello!")
+hiThere.appendChild(helloNode);
+document.querySelector('nav').appendChild(hiThere);
 
 // CTA
 // update H1 text]
@@ -99,3 +100,7 @@ document.querySelector('.contact p:last-of-type').textContent = (siteContent["co
 
 // Footer
 document.querySelector('footer p').textContent = (siteContent["footer"]["copyright"]);
+const addInfo = document.createElement("p");
+const addInfoText = document.createTextNode("Coding is Cool!");
+addInfo.appendChild(addInfoText);
+document.querySelector('footer p').prepend(addInfo);
