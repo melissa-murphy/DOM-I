@@ -39,4 +39,20 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// Append unique text to a tags
+let navItems = Array.from(document.getElementsByTagName("a"));
+console.log(navItems);
+navItems.forEach(item => {
+
+})
+
+// CTA
+// update H1 text
+const ctaH1 = document.querySelector('.cta-text h1');
+ctaH1.textContent = (siteContent["cta"]['h1']);
+
+// update button text
+
+// add circle header image
